@@ -15,7 +15,7 @@ export default function Home() {
           application. Different pages will have different examples of forms
           created with
           <Link
-            className='text-sky-600 underline hover:text-sky-800'
+            className='ml-1 text-sky-600 underline hover:text-sky-800'
             href='https://formspark.io/'
             target='_blank'
           >
@@ -25,21 +25,23 @@ export default function Home() {
         </p>
       </div>
       <ContactForm />
-      <p className='my-8'>
-        Below a form can be more text from a page, just like this. It is merely
-        meant to demonstrate that the form is embedded in the page, not inserted
-        at the end. It will also look a lot more realistic if there is content
-        surrounding the form.
-      </p>
-      <p className='my-8'>
-        Here iss a nice picture of Paris to liven up the page.
-      </p>
-      <Image
-        className='rounded border shadow-xl'
-        src={Paris}
-        alt='Lake amidst heath and grass'
-      />
-      <p className='my-8'>Followed by some more text.</p>
+      <div className='px-4'>
+        <p className='my-8'>
+          Below a form can be more text from a page, just like this. It is
+          merely meant to demonstrate that the form is embedded in the page, not
+          inserted at the end. It will also look a lot more realistic if there
+          is content surrounding the form.
+        </p>
+        <p className='my-8'>
+          Here iss a nice picture of Paris to liven up the page.
+        </p>
+        <Image
+          className='rounded border shadow-xl'
+          src={Paris}
+          alt='Lake amidst heath and grass'
+        />
+        <p className='my-8'>Followed by some more text.</p>
+      </div>
     </>
   );
 }
